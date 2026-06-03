@@ -1,0 +1,86 @@
+[
+  {
+    "id": "eval_q1",
+    "query": "What is AWS EC2?",
+    "expectedTopics": ["AWS", "EC2"],
+    "expectedCategories": ["AWS"],
+    "description": "Basic factual question about EC2"
+  },
+  {
+    "id": "eval_q2",
+    "query": "What is the difference between EC2 and Lambda?",
+    "expectedTopics": ["EC2", "Lambda", "serverless", "compute"],
+    "expectedCategories": ["AWS"],
+    "description": "Comparison question between two AWS services"
+  },
+  {
+    "id": "eval_q3",
+    "query": "Explain Kubernetes Pods and how they work",
+    "expectedTopics": ["Kubernetes", "Pods", "containers"],
+    "expectedCategories": ["Kubernetes"],
+    "description": "Explanation question about K8s Pods"
+  },
+  {
+    "id": "eval_q4",
+    "query": "What is Docker and what are its main components?",
+    "expectedTopics": ["Docker", "containers", "images"],
+    "expectedCategories": ["Docker"],
+    "description": "Factual question about Docker basics"
+  },
+  {
+    "id": "eval_q5",
+    "query": "Explain IAM and its importance in cloud security",
+    "expectedTopics": ["IAM", "security", "authentication", "authorization"],
+    "expectedCategories": ["AWS", "Cloud Security"],
+    "description": "Explanation question about IAM"
+  },
+  {
+    "id": "eval_q6",
+    "query": "Compare AWS, Azure, and Google Cloud Platform",
+    "expectedTopics": ["AWS", "Azure", "Google Cloud", "comparison"],
+    "expectedCategories": ["AWS", "Azure", "Google Cloud"],
+    "description": "Multi-provider comparison question"
+  },
+  {
+    "id": "eval_q7",
+    "query": "What is cloud virtualization and how does it work?",
+    "expectedTopics": ["virtualization", "hypervisor", "virtual machines"],
+    "expectedCategories": ["Virtualization"],
+    "description": "Factual question about virtualization"
+  },
+  {
+    "id": "eval_q8",
+    "query": "Explain cloud deployment models including public, private, and hybrid cloud",
+    "expectedTopics": ["deployment models", "public cloud", "private cloud", "hybrid cloud"],
+    "expectedCategories": ["Virtualization"],
+    "description": "Explanation of deployment models"
+  },
+  {
+    "id": "eval_q9",
+    "query": "What is a VPC and how do you configure it?",
+    "expectedTopics": ["VPC", "networking", "subnets", "security groups"],
+    "expectedCategories": ["AWS", "Google Cloud"],
+    "description": "Factual and procedural question about VPC"
+  },
+  {
+    "id": "eval_q10",
+    "query": "How does auto scaling work in cloud computing?",
+    "expectedTopics": ["auto scaling", "scaling policies", "load balancing"],
+    "expectedCategories": ["AWS"],
+    "description": "Explanation of auto scaling mechanisms"
+  },
+  {
+    "id": "eval_q11",
+    "query": "What is Kubernetes Ingress and how do you set it up?",
+    "expectedTopics": ["Kubernetes", "Ingress", "routing", "load balancing"],
+    "expectedCategories": ["Kubernetes"],
+    "description": "Procedural question about K8s Ingress"
+  },
+  {
+    "id": "eval_q12",
+    "query": "Explain the CIA Triad in cloud security",
+    "expectedTopics": ["CIA Triad", "confidentiality", "integrity", "availability"],
+    "expectedCategories": ["Cloud Security"],
+    "description": "Security concept explanation"
+  }
+]
