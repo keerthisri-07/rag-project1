@@ -45,8 +45,8 @@ export default function Dashboard() {
     fetchData()
   }, [])
 
-  const docCount = stats?.total_documents || status?.documents || 55
-  const chunkCount = stats?.total_chunks || status?.chunks || 1247
+  const docCount = stats?.totalDocuments || status?.services?.vectorStore?.totalDocuments || 55
+  const chunkCount = stats?.totalChunks || status?.services?.vectorStore?.totalChunks || 1247
   const faithfulness = status?.avg_faithfulness || 94.2
   const activeSessions = status?.active_sessions || 3
 

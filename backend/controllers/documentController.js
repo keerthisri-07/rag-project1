@@ -10,6 +10,7 @@
 const fs = require('fs');
 const path = require('path');
 const logger = require('../utils/logger');
+const vectorStore = require('../services/vectorStore');
 
 const DOCUMENTS_DIR = path.join(__dirname, '..', 'documents');
 
@@ -52,7 +53,7 @@ const loadDocuments = () => {
  */
 const listDocuments = async (req, res) => {
   try {
-    const { category, page = 1, limit = 20 } = req.query;
+    const { category, page = 1, limit = 100 } = req.query;
 
     let documents = loadDocuments();
 
@@ -65,7 +66,7 @@ const listDocuments = async (req, res) => {
 
     // Pagination
     const pageNum = parseInt(page) || 1;
-    const limitNum = parseInt(limit) || 20;
+    const limitNum = parseInt(limit) || 100;
     const startIndex = (pageNum - 1) * limitNum;
     const endIndex = startIndex + limitNum;
 
@@ -101,14 +102,20 @@ const getDocumentStats = async (req, res) => {
 
     const stats = {
       totalDocuments: documents.length,
+      totalChunks: vectorStore.getStats().totalChunks,
       totalContentLength: 0,
+      totalWords: 0,
       categories: {},
       difficulties: { beginner: 0, intermediate: 0, advanced: 0 },
     };
 
     documents.forEach((doc) => {
-      const contentLen = doc.content ? doc.content.length : 0;
+      const content = doc.content || '';
+      const contentLen = content.length;
       stats.totalContentLength += contentLen;
+      
+      const wordCount = content.split(/\s+/).filter(Boolean).length;
+      stats.totalWords += wordCount;
 
       // Category stats
       if (!stats.categories[doc.category]) {

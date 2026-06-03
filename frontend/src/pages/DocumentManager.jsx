@@ -103,13 +103,13 @@ export default function DocumentManager() {
           <StatsCard
             icon={FileText}
             label="Total Documents"
-            value={stats.total_documents || documents.length}
+            value={stats.totalDocuments || documents.length}
             color="cyan"
           />
           <StatsCard
             icon={Database}
             label="Total Chunks"
-            value={stats.total_chunks || 0}
+            value={stats.totalChunks || 0}
             color="purple"
           />
           <StatsCard
@@ -121,7 +121,7 @@ export default function DocumentManager() {
           <StatsCard
             icon={BookOpen}
             label="Total Words"
-            value={stats.total_words?.toLocaleString() || '0'}
+            value={stats.totalWords?.toLocaleString() || '0'}
             color="amber"
           />
         </div>
