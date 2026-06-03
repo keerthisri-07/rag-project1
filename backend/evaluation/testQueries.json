@@ -82,5 +82,61 @@
     "expectedTopics": ["CIA Triad", "confidentiality", "integrity", "availability"],
     "expectedCategories": ["Cloud Security"],
     "description": "Security concept explanation"
+  },
+  {
+    "id": "eval_q13",
+    "query": "What is Google Cloud Run and how does it work?",
+    "expectedTopics": ["Google Cloud", "Cloud Run", "containers", "serverless"],
+    "expectedCategories": ["Google Cloud"],
+    "description": "Factual question about GCP Cloud Run"
+  },
+  {
+    "id": "eval_q14",
+    "query": "Explain the difference between Docker containers and virtual machines",
+    "expectedTopics": ["Docker", "containers", "virtual machines", "hypervisor", "comparison"],
+    "expectedCategories": ["Docker", "Virtualization"],
+    "description": "Comparison question between containers and VMs"
+  },
+  {
+    "id": "eval_q15",
+    "query": "What is AWS S3 and how does it store data?",
+    "expectedTopics": ["AWS", "S3", "object storage", "buckets"],
+    "expectedCategories": ["AWS"],
+    "description": "Factual question about AWS S3 object storage"
+  },
+  {
+    "id": "eval_q16",
+    "query": "Explain Kubernetes Deployments and how rolling updates work",
+    "expectedTopics": ["Kubernetes", "deployments", "rolling updates", "replica set"],
+    "expectedCategories": ["Kubernetes"],
+    "description": "Explanation and procedural question about K8s Deployments"
+  },
+  {
+    "id": "eval_q17",
+    "query": "What is Azure Active Directory and how does it handle identity?",
+    "expectedTopics": ["Azure", "Active Directory", "identity", "authentication"],
+    "expectedCategories": ["Azure"],
+    "description": "Factual question about Azure AD"
+  },
+  {
+    "id": "eval_q18",
+    "query": "Explain the difference between SQL and NoSQL databases in the cloud",
+    "expectedTopics": ["SQL", "NoSQL", "databases", "comparison"],
+    "expectedCategories": ["Azure", "AWS", "Google Cloud"],
+    "description": "Comparison of cloud databases"
+  },
+  {
+    "id": "eval_q19",
+    "query": "What is Docker Compose and when should you use it?",
+    "expectedTopics": ["Docker", "Compose", "multi-container", "yaml"],
+    "expectedCategories": ["Docker"],
+    "description": "Factual question about Docker Compose"
+  },
+  {
+    "id": "eval_q20",
+    "query": "What is cloud compliance and why is it important?",
+    "expectedTopics": ["compliance", "security", "regulations", "GDPR", "HIPAA"],
+    "expectedCategories": ["Cloud Security"],
+    "description": "Explanation question about cloud compliance regulations"
   }
 ]
